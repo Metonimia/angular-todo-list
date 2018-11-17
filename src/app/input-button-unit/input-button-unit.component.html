@@ -1,0 +1,5 @@
+<p>
+  <input #elementRef [value]="title"
+         (keyup.enter)="submitValue($event.target.value)">
+  <button (click)="submitValue(elementRef.value)">Save</button>
+</p>
